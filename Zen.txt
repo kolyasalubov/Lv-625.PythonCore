@@ -10,7 +10,7 @@ Zen of Python
 9.
 10.
 11.
-12.
+12. In the face of ambiguity, refuse the temptation to guess.
 13.
 14.
 15.
