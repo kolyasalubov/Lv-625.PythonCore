@@ -3,11 +3,7 @@ Zen of Python
 2.
 3.
 4.Complex is better than complicated
-<<<<<<< HEAD
 5.Flat is better than nested. 
-=======
-5. Flat is better than nested. 
->>>>>>> 494e5da13e1ff9a298c7b150bc899398830e3bf1
 6.Readability counts.
 7.
 8.
