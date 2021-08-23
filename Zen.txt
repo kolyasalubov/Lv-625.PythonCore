@@ -2,7 +2,7 @@ Zen of Python
 1.
 2.
 3.
-4.Сложное лучше, чем запутанное.
+4.Complex is better than complicated
 5.
 6.Readability counts.
 7.
