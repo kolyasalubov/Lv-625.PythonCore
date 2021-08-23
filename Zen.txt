@@ -3,13 +3,8 @@ Zen of Python
 2.
 3.
 4.Complex is better than complicated
-<<<<<<< HEAD
-5. Flat is better than nested. 
-6.
-=======
-5.
+5.Flat is better than nested. 
 6.Readability counts.
->>>>>>> 9a98466adb4f615ce2c5140c0833251d940d682a
 7.
 8.Special cases aren't special enough to break the rules.
 9.
@@ -17,7 +12,7 @@ Zen of Python
 11.
 12.
 13.
-14.
+14.Although that way may not be obvious at first unless you're Dutch.
 15.
 16.
-17.
+17.If the implementation is hard to explain, it's a bad idea
