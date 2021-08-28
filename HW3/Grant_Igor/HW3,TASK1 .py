@@ -1,1 +1,11 @@
-
+file = open("zen.txt")
+text = file.read()
+file.close()
+num_of_better = text.count("better")
+num_of_is = text.count("is")
+num_of_never = text.count("never")
+print("The word 'better' was repeated %d times" %num_of_better)
+print("The word 'is' was repeated %d times" %num_of_is)
+print(("The word 'never' was repeated %d times" %num_of_never), "\n")
+print(text.upper(), "\n")
+print(text.replace('i' , '&'))
