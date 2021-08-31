@@ -17,4 +17,3 @@ print(f'{zen_of_python_str.upper()}')
 print(" ")
 
 print(f'{zen_of_python_str.replace("i", "&")}')
-
