@@ -8,6 +8,3 @@ print("Sum of all numbers is: ", sum)
 list = [i for i in number]
 sorted_list = sorted(list)
 print("Your sorted list is: ", sorted_list)
-
-
-
