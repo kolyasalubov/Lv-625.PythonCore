@@ -4,5 +4,5 @@ def converter(sentence):
     into lower case and capitalizes the beginning
     of the sentence
     """
-    if sentence.upper() or sentence.lower():
-        return sentence.capitalize()
+    sentence = ' '.join(sentence.split())
+    return sentence.capitalize()
