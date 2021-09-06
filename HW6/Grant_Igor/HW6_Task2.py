@@ -9,7 +9,7 @@ def triangle(a, b, c):
     s_t = round(math.sqrt(p*(p-a)*(p-b)*(p-c)), 2)
     return s_t
 def circle(r):
-    # The function will calculate the squere of the circle
+    # Function will calculate the squere of the circle
     s_c = math.pi*(r**2)
     return round((s_c), 2)
 
