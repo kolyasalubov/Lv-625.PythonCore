@@ -1,4 +1,2 @@
-def function(word):
-    return len(word)
-
+none
 
