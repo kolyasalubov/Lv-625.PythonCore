@@ -15,6 +15,18 @@ The correct answer would be 17.
 Hint: Don't forget to check for bad values like null/undefined
 """
 
-def count_sheeps(sheep):
-  # May the force be with you
-  pass
+def count_sheeps(sheep: list) -> int:
+    """
+    This function counts the number of sheep present in the array.
+    """
+    sheeps = sheep.count(True)
+    return sheeps
+
+
+print(count_sheeps(
+    [True,  True,  True,  False,
+    True,  True,  True,  True ,
+    True,  False, True,  False,
+    True,  False, 0, True ,
+    True,  True,  True,  True ,
+    False, False, True,  True]))
