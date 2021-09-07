@@ -10,15 +10,14 @@ Example (Input --> Output)
 "Hi There." --> "There. Hi"
 """
 
-# def reverse(st):
-#     # Your Code Here
-#     return st
-
 def reverse(st):
-    s = list(st.split())
-    # rev_list = reverse(s)
-    # rev_str = ''.join(reverse(list(st.split())))
-    return s
+    """
+    This function reverses the words in a given string.
+    """
+    sl = st.split()         # ['Hello', 'World']
+    r = sl.reverse()        # ['World', 'Hello']
+    rev_st = ' '.join(sl)   # "World Hello"
+    return rev_st
 
 a = reverse("Hello World")
 print(a)
