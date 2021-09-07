@@ -1,9 +1,12 @@
-# Write a script that will calculate the factorial of the entered number without using recursion.
+##### Home_Work4_Task_1 ("If statement "Slide 23)
+"""
+Write a script that will calculate the factorial of the entered number without using recursion.
+"""
 
 customer_number = int(input('Enter your number: '))
 print(f'Your number is: {customer_number}')
-factorial = 1
 
+factorial = 1
 if customer_number in (0,1):
     factorial = 1
 else:

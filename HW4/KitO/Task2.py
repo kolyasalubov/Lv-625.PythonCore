@@ -1,4 +1,6 @@
-# Create a list that contains elements of integer type, then use the loop to change the type of these elements to a floating type.
+##### Home_Work4_Task_2 ("Loops "Slide 14)
+# Create a list that contains elements of integer type, 
+# then use the loop to change the type of these elements to a floating type.
 
 customer_number = int(input('Enter your number: '))
 print(f'Your number is: {customer_number}')
