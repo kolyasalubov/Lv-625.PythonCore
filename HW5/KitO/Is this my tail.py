@@ -13,10 +13,18 @@ For Haskell, body has the type of String and tail has the type of Char.
 For Go, body has type string and tail has type rune.
 """
 
-def correct_tail(body, tail):
-    sub = body.substr(len(body)-len(tail.length)
-    # if sub = tai:
-    #     return True
-    # else: #to do
-    #     return False
-
+def correct_tail(body: str, tail: str) -> bool:
+    """
+    This function checks if the tail is the same as the last letter(s) of the body.
+    """
+    n = len(body)-len(tail)
+    if body[n:] == tail:
+        return bool(1)
+    return bool(0)
+    
+print(correct_tail("Fox", "x")) # True
+print(correct_tail("Rhino", "o")) # True
+print(correct_tail("Meerkat", "t")) # True
+print(correct_tail("Emu", "t")) # False
+print(correct_tail("Badger", "s")) # False
+print(correct_tail("Giraffe", "fe")) # True
