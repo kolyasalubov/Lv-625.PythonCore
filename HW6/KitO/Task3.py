@@ -20,8 +20,14 @@ def count_str_dic (string):
     input: "hello"
     output: {"h":1, "e":1, "l":2, "o":1}
     """
-    dic = dict(string.split())
-    return dic
+    l = [i for i in string]
+    d = dict()
+    for i in l:
+        num = string.count(i)
+        du = {i:num}
+        d.update(du)
+    return d
 
+print(count_str_dic("hello"))
 print(count_str_dic("Hello world"))
 
