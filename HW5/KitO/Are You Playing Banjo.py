@@ -12,5 +12,17 @@ Names given are always valid strings.
 """
 
 def are_you_playing_banjo(name):
-    # Implement me!
-    return name
+    if name[0].upper() == "R":
+        return name + " plays banjo"
+    return name + " does not play banjo"
+
+def are_you_playing_banjo2(name):
+    if name[0].lower() == "r":
+        return name + " plays banjo"
+    return name + " does not play banjo"
+
+print(are_you_playing_banjo("martin"))
+print(are_you_playing_banjo("Rikke"))
+print(are_you_playing_banjo("royc"))
+print(are_you_playing_banjo2("Rikke"))
+print(are_you_playing_banjo2("royc"))
