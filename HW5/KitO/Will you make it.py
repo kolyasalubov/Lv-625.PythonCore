@@ -10,3 +10,17 @@ Function should return true (1 in Prolog) if it is possible and
 false (0 in Prolog) if not. The input values are always positive.
 """
 
+def zero_fuel(distance_to_pump, mpg, fuel_left):
+    """
+    This function tells you if it is possible to get to the pump or not:
+    distance_to_pump -> distance to target in miles 
+    mpg -> fuel consumption (miles per gallon)
+    fuel_left -> fuel left in gallons
+    """
+    fuel_needed = distance_to_pump / mpg
+    if fuel_left >= fuel_needed:
+        return True
+    return False
+
+print(zero_fuel(50, 25, 2))     # True
+print(zero_fuel(100, 50, 1))    # False

@@ -28,3 +28,5 @@ print(correct_tail("Meerkat", "t")) # True
 print(correct_tail("Emu", "t")) # False
 print(correct_tail("Badger", "s")) # False
 print(correct_tail("Giraffe", "fe")) # True
+
+### correct_tail = lambda a, b: a[-1] == b
