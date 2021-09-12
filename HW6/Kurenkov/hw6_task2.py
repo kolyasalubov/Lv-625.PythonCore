@@ -9,7 +9,7 @@ def rectangle_square(p, d):
 
 def triangle_square(a, b, c):
     sp = (a + b + c) / 2
-    return round(sqrt(sp*(sp-a)*(sp-b)*(sp-c)), 3)
+    return round(sqrt(sp * (sp - a) * (sp - b) * (sp - c)), 3)
 
 
 def circle_square(r):
@@ -22,15 +22,16 @@ def simple_square(*args):
     All that you need is to pass to the function two parameters for the rectangle, three for the triangle, or one
     for the circle and fetch the results.
     """
-
-    if len(args) == 2:
-        print(rectangle_square(*args))
-    elif len(args) == 1:
-        print(circle_square(*args))
-    elif len(args) == 3:
-        print(triangle_square(*args))
-    else:
+    try:
+        if len(args) == 2:
+            print(rectangle_square(*args))
+        elif len(args) == 1:
+            print(circle_square(*args))
+        elif len(args) == 3:
+            print(triangle_square(*args))
+        else:
+            print("This is a simple function, so it can use only specific parameters, please use help for more info.")
+    except Exception:
         print("This is a simple function, so it can use only specific parameters, please use help for more info.")
-
 
 
