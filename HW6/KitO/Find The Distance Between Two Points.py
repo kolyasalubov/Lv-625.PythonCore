@@ -17,5 +17,5 @@ def distance(x1, y1, x2, y2):
     D = ((x2 - x1)**2 + (y2 - y1)**2)**(1/2)
     return round(D,2)
 
-print(distance(-3, 4, 2, -4))   # 9.433981132056603
+print(distance(-3, 4, 2, -4))   # 9.43
 
