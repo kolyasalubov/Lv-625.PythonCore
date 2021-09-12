@@ -15,14 +15,13 @@ a = count_str("Hello world")
 print(a)
 
 
-def count_str_dic (b):
+def count_str_dic (string):
     """
     input: "hello"
     output: {"h":1, "e":1, "l":2, "o":1}
     """
-    sett = set(b)
-    dic = dict(sett) # доробити
-    return sett, dic
+    dic = dict(string.split())
+    return dic
 
-b = count_str_dic("Hello world")
-print(b)
+print(count_str_dic("Hello world"))
+
