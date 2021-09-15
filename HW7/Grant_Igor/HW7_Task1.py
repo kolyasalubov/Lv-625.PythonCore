@@ -5,8 +5,8 @@ if figure == 1:
     # Figure one for rectangle
     print(sq.rectangle())
 elif figure == 2:
-    # Figure 2 for triangle
+    # Figure two for triangle
     print(sq.triangle())
 elif figure == 3:
-    # Figure 3 for circle
+    # Figure three for circle
     print(sq.circle())
