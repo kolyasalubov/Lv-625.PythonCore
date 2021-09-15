@@ -12,3 +12,4 @@ elif figure == 2:
 else:
     radius = int(input("enter the length of the radius "))
     print(f"square of a circle = {my_area.area_circle(radius):.2f}")
+    
