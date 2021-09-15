@@ -1,0 +1,12 @@
+a = int(input())
+b = int(input())
+total = a + b
+diff = a - b
+mult = a * b
+div = a / b
+exp = a ** b
+print(a, "+", b, "=", total)
+print(a, "-", b, "=", diff)
+print(a, "*", b, "=", mult)
+print(a, "/", b, "=", div)
+print(a, "**", b, "=", exp)
