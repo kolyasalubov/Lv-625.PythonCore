@@ -13,3 +13,5 @@ def reverse(st):
     my_list.reverse()
     st = " ".join(my_list)
     return st
+
+print(reverse('   dfjfjfjf fkfkfk    flflfl   f  '))
