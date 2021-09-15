@@ -1,4 +1,4 @@
-import square as sq
+import square_of_figures as sq
 # Imported module will calculate the square of chose figure
 figure = int(input("Select the figure for square calculation: 1. Rectangle, 2. Triangle, 3. Circle "))
 if figure == 1:
