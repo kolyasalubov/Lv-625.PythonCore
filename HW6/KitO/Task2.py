@@ -7,12 +7,12 @@ and call them in the main program depending on the user's choice).
 
 def sqRectangle(a: int, b: int) -> int:
     """
-    Функція розраховує площу прямокутника.
+    Функція розраховує площу прямокутника,
+    якщо відома його довжина та ширина.
     """
-    squareR = a * b
-    return squareR
+    return a * b
 
-print(sqRectangle(5,6))
+print(sqRectangle(5,6))     # 30
 
 def SqTriangle(a: int, b: int, c: int) -> int:
     """
@@ -23,24 +23,22 @@ def SqTriangle(a: int, b: int, c: int) -> int:
     squareT = (p * (p - a) * (p - b) * (p - c)) ** (1/2)
     return squareT
 
-print(SqTriangle(5,6,8))
+print(SqTriangle(5,6,8))    # 14.981238266578634
 
 def sqTriangle(a: int, b: int) -> int:
     """
     Функція розраховує площу прямокутного трикутника за формулою Герона,
-    якщо відома довжина двох катетів цього трикутника.
+    якщо відома довжина двох катетів (a,b) цього трикутника.
     """
-    c = (a ** 2 + b ** 2) ** (1/2)
-    p = (a + b + c) / 2
-    squareT = (p * (p - a) * (p - b) * (p - c)) ** (1/2)
-    return squareT
+    return 0.5 * a * b
 
-print(sqTriangle(5,6))
+print(sqTriangle(5,6))      # 15.0
 
 def sqCircle(r: int) -> int:
-    """"""
+    """
+    Функція розраховує площу кола, якщо відомо радіус (r).
+    """
     pi = 3.1415926535
-    squareC = pi * r ** 2
-    return squareC
+    return pi * (r ** 2)
 
-print(sqCircle(3))
+print(sqCircle(3))      # 28.2743338815
