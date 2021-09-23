@@ -21,3 +21,7 @@ class Polygon():
 #         return sqr
 # r = Rectangle()
 # r.squere()
+
+r = Polygon()
+r.input_sides()
+r.show_sides()
