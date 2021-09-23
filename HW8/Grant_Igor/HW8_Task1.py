@@ -1,27 +1,30 @@
 class Polygon():
-    def __init__(self, number_of_sides):
-        self.number_of_sides = number_of_sides
-        self.sides = [0 for i in range(number_of_sides)]
+    """
+    class polygon is a superclass
+    for all polygonal figures
+    """
+    def __init__(self, num_of_sides):
+        self.num_of_sides = num_of_sides
+        self.sides = [0 for i in range(num_of_sides)]
 
     def input_sides(self):
-        self.sides = [float(input(f"Enter side {str(i + 1)}: "))
-                      for i in range(self.number_of_sides)]
-
-    def show_sides(self):
-        for i in range(self.number_of_sides):
-            print(f"Side {i + 1} is {self.sides[i]}")
+        self.sides = [float(input("Enter side " + str(i + 1) + " : "))
+                      for i in range(self.num_of_sides)]
 
 
-# class Rectangle(Polygon):
-#     def __init__(self):
-#         super().__init__(self)
-#     def squere(self):
-#         a, b = self.sides
-#         sqr = a * b
-#         return sqr
-# r = Rectangle()
-# r.squere()
+class Rectangle(Polygon):
+    """
+    class rectangle is subclass of superclass polygon
+    will calculate the square of the rectangle
+    """
+    def __init__(self):
+        Polygon.__init__(self, 2)
 
-r = Polygon()
+    def find_square(self):
+        a, b = self.sides
+        square = a * b
+        print(f'The square of rectangle is {square}')
+
+r = Rectangle()
 r.input_sides()
-r.show_sides()
+r.find_square()
