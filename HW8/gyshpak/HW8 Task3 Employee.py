@@ -1,4 +1,7 @@
 class Emploees:
+    """
+    Doc string
+    """
     my_count = 0
     def __init__(self, name, salary):
         self.name = name
@@ -26,4 +29,8 @@ Emp5 = Emploees('Gege5', 15000)
 Emploees.print_count()
 Emp1.return_prop()
 print(Emploees.stat_method())
-print(Emploees(__))
+print(f"base classe is {Emploees.__base__}")
+print(f"class namespace: {Emploees.__dict__}")
+print(f"Name class is {Emploees.__name__}")
+print(f"Module name in which the class: {Emploees.__module__}")
+print(f"Documentation bar: {Emploees.__doc__}")
