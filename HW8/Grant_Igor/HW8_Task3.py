@@ -25,7 +25,6 @@ emp3 = Employee("Stephan", 100500)
 
 print(emp1.show_info(), emp2.show_info(), emp3.show_info())
 print("Number of employees: ", Employee.emp_counter)
-print(emp1.__class__)
 print(emp1.__dict__)
 print(emp1.__doc__)
 print(emp1.__module__)
