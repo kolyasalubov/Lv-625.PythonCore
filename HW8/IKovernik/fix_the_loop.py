@@ -1,10 +1,5 @@
-def double_char(s):
-    dup = str()  # a new, empty string.
-    for char in s:
-       dup += char + char
-       
-    return dup
-
-s = "abc jhL"
-s=double_char(s)
-print(s)
+def list_animals(animals):
+    list = ''
+    for i in range(len(animals)):
+        list += str(i + 1) + '. ' + animals[i] + '\n'
+    return list
