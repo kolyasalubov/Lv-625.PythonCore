@@ -10,7 +10,16 @@ ball2.ballType     //=> "super"
 """
 
 class Ball(object):
-    pass
 
+    def __init__(self, ball_type = "regular"):
+        self.ball_type = ball_type
 
+    def ballType(self):
+        return self.ball_type
+
+ball1 = Ball()
+ball2 = Ball("super")
+
+print(ball1.ballType())
+print(ball2.ballType())
 
