@@ -12,8 +12,12 @@ summation(8) -> 36
 """
 
 def summation(num):
-    pass # Code here
+    import math
+    my_list = list(range(1,num+1))
+    return round(math.fsum(my_list))
 
+# def summation(num):
+#     return sum(range(num + 1))
 
 
 print(summation(1))     # 1
