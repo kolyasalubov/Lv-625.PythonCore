@@ -1,4 +1,4 @@
-##### 
+##### https://www.codewars.com/kata/basic-subclasses-adam-and-eve
 """
 According to the creation myths of the Abrahamic religions, 
 Adam and Eve were the first Humans to wander the Earth.
@@ -11,5 +11,16 @@ Both objects have to be subclasses of Human.
 Your job is to implement the Human, Man and Woman classes.
 """
 
+class Human:
+    pass
 
+class Man(Human):
+    pass
 
+class Woman(Human):
+    pass
+
+def God():
+    return [Man(), Woman()]
+
+print(God())
