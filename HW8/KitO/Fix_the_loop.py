@@ -12,7 +12,11 @@ list_animals(animals) == '1. dog\n2. cat\n3. elephant\n'
 """
 
 def list_animals(animals):
-    list = ''
-    for i in range(animals):
-        list += str(i + 1) + '. ' + animals[i] + '\n'
-    return list
+    list = []
+    for i in range(0, len(animals)):
+        animals[i] = str(i + 1) + '. ' + animals[i] + '\n'
+        list.append(animals[i])
+    return "".join(list)
+
+animals = ['dog', 'cat', 'elephant']
+print(list_animals(animals))
