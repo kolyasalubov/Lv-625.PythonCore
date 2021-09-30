@@ -9,8 +9,3 @@ class Ghost:
         colors = ['white', 'yellow', 'purple', 'red']
         randomindex = random.randint(0,len(colors)-1) 
         self.color=colors[randomindex]
-
-
-for i in range(0,100):
-    
-    print(Ghost().color)
