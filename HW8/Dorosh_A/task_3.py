@@ -34,4 +34,3 @@ print(f"Class namespace: {Employee.__dict__}")
 print(f"Name class is {Employee.__name__}")
 print(f"Module name in which the class: {Employee.__module__}")
 print(f"Documentation bar: {Employee.__doc__}")
-
