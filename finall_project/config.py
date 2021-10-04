@@ -1,0 +1,5 @@
+
+BOT_TOKEN = str("1988134498:AAHCZj7zVpnQOuTm1oBX386Hu28ZVCOHgRY")
+admins = [
+    510598948
+]
