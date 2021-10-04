@@ -1,3 +1,8 @@
+"""
+Here are some modules imported
+tkinter is responsible for main game interface (window)
+random module will be used for single player mode
+"""
 from tkinter import *
 import tkinter.messagebox
 from random import *
@@ -213,6 +218,11 @@ def single_player():
         
         checkForWin()
     def checkForWin():
+        """
+        this part of the code is responsible for 'check for win'
+        in single player mode. It is checking for all possible combinations
+        for three 'X'es in a row
+        """
         global pe
         if (button1['text'] == 'X' and button2['text'] == 'X' and
         button3['text'] == 'X' or
@@ -279,7 +289,11 @@ button9['text'] == 'O'):
     fg='black', height=1, width=8)
     label.grid(row=1, column=0)
 
-
+    """
+    Configuration of the buttons, such as size, color, symbol color
+    width and height of the text ('x' or 'o') and the position
+    of the button in the game window
+    """
    
 
     button1 = Button(tk, text=" ", font='Times 20 bold', bg='gray',
@@ -323,6 +337,12 @@ button9['text'] == 'O'):
 
 
 def multi_player():
+    """
+    Multiplayer mode has most of the configurations
+    just like single player mode but there is one main difference
+    this mode requires two playes and doens't use 'random'
+    function for filling up the buttons, instead t is done by player
+    """
     global tk
     tk = Tk()
     tk.title("Tic Tac Toe multiplayer")
@@ -332,6 +352,9 @@ def multi_player():
     p1 = StringVar()
     p2 = StringVar()
 
+    """
+    Players names window
+    """
     player1_name = Entry(tk, textvariable=p1, bd=5)
     player1_name.grid(row=1, column=1, columnspan=8)
     player2_name = Entry(tk, textvariable=p2, bd=5)
@@ -365,6 +388,10 @@ def multi_player():
         button1["state"] = NORMAL
         
     def TF():
+        """
+        this part of the code is made to require one of
+        the players enter his name, without that game won’t start
+        """
         if len(player1_name.get()) == 0 and len(player2_name.get())==0:
             return False
         else:
@@ -375,11 +402,18 @@ def multi_player():
 
 
     def btnClick(buttons):
+
         
         global bclick, flag, player2_name, player1_name, playerb, pa
         #print(p1.get())
         #print(p2.get())
         if(TF()):
+            """
+            This code allows every button to be pressed only once
+            it will check for 'X' or 'O' otherwise will 
+            return the message that button was already clicked
+            """
+
             if buttons["text"] == " " and  bclick == True:
                 buttons["text"] = "X"
                 bclick = False
@@ -387,6 +421,7 @@ def multi_player():
                 pa =  player1_name.get() + " Wins!"
                 checkForWin()
                 flag += 1
+
 
 
             elif buttons["text"] == " " and bclick == False:
@@ -403,6 +438,11 @@ def multi_player():
             #normalButton()
 
     def checkForWin():
+        """
+        this part of the code will check if players 1 or
+        player 2 has won the game works for multiplayer mode
+        checking all possible combinations for 'X' or 'O' in a row
+        """
         if (button1['text'] == 'X' and button2['text'] == 'X' and
         button3['text'] == 'X' or
             button4['text'] == 'X' and button5['text'] == 'X' and
@@ -426,6 +466,10 @@ def multi_player():
             tkinter.messagebox.showinfo("Tic-Tac-Toe", pa)
 
         elif(flag == 8):
+            """
+            If non of the players has required combination
+            It is a tie and game ends
+            """
             tkinter.messagebox.showinfo("Tic-Tac-Toe", "It is a Tie")
             tk.destroy()
 
@@ -453,6 +497,9 @@ button9['text'] == 'O'):
 
 
     buttons = StringVar()
+    """
+    Labels for each player in multiplayer mode
+    """
 
     label = Label( tk, text="Player 1:", font='Times 20 bold', bg='white',
     fg='black', height=1, width=8)
@@ -463,9 +510,17 @@ button9['text'] == 'O'):
     fg='black', height=1, width=8)
     label.grid(row=2, column=0)
 
+    """
+    Buttons set up 
+    """
+
     button1 = Button(tk, text=" ", font='Times 20 bold', bg='gray',
     fg='white', height=4, width=8, command=lambda: btnClick(button1))
     button1.grid(row=3, column=0)
+    """
+    Parameters include size of the button, color, color of the 'X' or 'O',
+    height and width, and the position of the button on the grid
+    """
 
     button2 = Button(tk, text=' ', font='Times 20 bold', bg='gray',
     fg='white', height=4, width=8, command=lambda: btnClick(button2))
@@ -504,6 +559,11 @@ button9['text'] == 'O'):
 
 
 def main():
+    """
+    function main is responsible for the main game window
+    this window allows player to chose game mode
+    after which another window will appear
+    """
     root = Tk()
     
     root.geometry('400x500')
