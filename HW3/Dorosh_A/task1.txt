@@ -1,8 +1,0 @@
-import this
-import codecs
-zen_of_python=codecs.encode(this.s, 'rot13')
-print(f"The word 'better' is repeated {zen_of_python.count('better')} times")
-print(f"The word 'never' is repeated {zen_of_python.count('never')} times")
-print(F"The word 'is' is repeated {zen_of_python.count('is')} times")
-print(zen_of_python.upper())
-print(zen_of_python.replace('i', '&'))

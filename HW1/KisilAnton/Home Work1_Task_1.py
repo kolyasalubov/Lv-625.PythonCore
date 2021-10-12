@@ -1,6 +1,0 @@
-User_Name=input('What is your name? ')
-User_Age=input('How old are you? ')
-User_Home=input('Where do you live? ')
-print('Hello, ',User_Name)
-print('Your age is ',User_Age)
-print('You live in ',User_Home)

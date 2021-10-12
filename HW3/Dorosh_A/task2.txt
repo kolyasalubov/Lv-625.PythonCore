@@ -1,7 +1,0 @@
-x = input("Enter your number")
-count = int (1)
-for i in x:
-    count *= int(i)
-print(f"Your count of entered number is {count}") 
-print(f"Your reversed entered number is {x[::-1]}")
-print(f"Your sorted  entered number is {sorted(x)}")
